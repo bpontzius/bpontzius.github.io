@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="portfoliotest.css">
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+</script>
+<![endif]-->
+<title>Fitness Home </title>
+</head>
+<body>
+<header>
+<a href="https://www.facebook.com/"><img src="facebooklogo.jpg" alt="logo" width=27px height=27px style="display: inline; margin:0; padding:0"></a>
+<a href="https://twitter.com/"><img src="twitterlogo.jpg" alt="logo" width=27px height=27px style="display: inline; margin:0; padding: 0;"></a>
+<a href="https://www.instagram.com/"><img src="instagramlogo.jpg" alt="logo" width=27px height=27px style="display: inline; margin:0; padding: 0;"></a>
+<a href="https://www.youtube.com/"><img src="youtubelogo.jpg" alt="logo" width=27px height=27px style="display: inline; margin:0; padding: 0;"></a>
+</header>
+<div class="navbar">
+<img src="logo.gif" alt="logo" width=120px height=70px style="display: inline; margin:0; padding:0; position:absolute; top:39px; left:5px;">
+<h2 id="navhead"> P-Fitness</h2>
+  <a href="portfoliotest.html">Home</a>
+  <a href="portfolioabout.html">About</a>
+  <a href="portfoliocontact.html">Contact</a>
+  <div class="dropdown">
+    <button class="dropbtn">Training
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a style="margin:0;" href="portfoliotraining.html#trainingheader1">Build Muscle</a>
+      <a style="margin:0;" href="portfoliotraining.html#trainingheader2">Weight-Loss</a>
+    </div>
+  </div> 
+</div>
+<div id="slideshow">
+   <div id="slide1">
+     <h1 class="slideHeader">Welcome<br> to<br> P-Fitness!</h1>
+   </div>
+   <div id="slide2">
+     <h1 class="slideHeader">start <br>a plan<br> Today!</h1>
+   </div>
+   <div id="slide3">
+     <h1 class="slideHeader">Free <br>proven<br> Routines!</h1>
+   </div>
+</div>
+<a href="http://jquery.com/">jQuery</a>
+<script src="jquery-3.3.1.min.js"></script>
+<script>
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() {
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+}, 3000);
+</script>
+</div>
+<div id="container">
+<div id="box1">
+	<h3></h3>
+	<strong class="boxtitle">Get Shredded!</strong><br>
+	<p> Get your body fat down to the single digits. Whether you want to prep for competition or just look good on the beach </p>
+	<a href="getshredded.html"><button>Read More</button></a>
+</div>
+<div id="box2">
+	<h3 style="background-position: center;"></h3>
+	<strong class="boxtitle"> Melt Fat Fast</strong>
+	<p>Lose 20+ pounds in just weeks by following a few simple guidlines and get your body ready for summer faster than ever</p>
+	<a href="meltfat.html"><button>Read More</button></a>
+</div>
+<div id="box3">
+	<h3 style="background-position: center;"></h3>
+	<strong class="boxtitle">Increase Strength</strong>
+	<p>We have put together a list of 10 things you may be doing wrong and improvements you can make to increase power on nearly every lift.  </p>
+	<a href="increasestrength.html"><button>Read More</button></a>
+</div>
+</div>
+</main>
+<footer style="position: relative; top: 500px;">
+<div id="footerlinks">
+<a href="#">Home</a>|
+<a href="#">Help</a>|
+<a href="termsofservice.html">Termsof Service</a>
+</div>
+&#xa9; P-Fitness all rights reserved<br>
+all information given on this site is for educational use only, always consult a health professional before adhering to a dietary or exercise program
+</footer>
+</body>
+</html>
